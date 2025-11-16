@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IK Electro - Premium Electronics Components Catalog">
+    <title>IK Electro - Electronics Components</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">IK Electro</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#catalog" class="nav-link active">Catalog</a>
+                <a href="#services" class="nav-link">Services</a>
+            </nav>
+
+            <div class="header-controls">
+                <button class="lang-btn" id="langBtn" title="Change Language">
+                    <span id="langIcon">🌐</span> EN
+                </button>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <a href="https://t.me/Ik_electro" target="_blank" class="telegram-btn" title="Contact on Telegram">
+                    <span>📱 Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">Premium Electronics Components</h1>
+            <p id="heroSubtitle">Discover quality components for your projects</p>
+            <div class="hero-search">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search components...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <div class="filter-group">
+                <label id="categoryLabel">Category:</label>
+                <select id="categoryFilter" class="filter-select">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label id="conditionLabel">Condition:</label>
+                <select id="conditionFilter" class="filter-select">
+                    <option value="">All Conditions</option>
+                    <option value="A">A - New</option>
+                    <option value="B">B - Used But 100% working</option>
+                    <option value="C">C - Have problem</option>
+                    <option value="D">D - Mixed components</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label id="sortLabel">Sort by:</label>
+                <select id="sortFilter" class="filter-select">
+                    <option value="name">Name</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="stock">Stock Available</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label id="priceRangeLabel">Max Price:</label>
+                <div class="price-input">
+                    <input type="number" id="priceRange" class="price-input-field" min="0" max="5000" value="5000">
+                    <span class="price-currency">DZD</span>
+                </div>
+            </div>
+
+            <button id="resetBtn" class="reset-btn">Reset Filters</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section" id="catalog">
+        <div class="products-header">
+            <h2 id="productsTitle">Components Catalog</h2>
+            <span id="productCount" class="product-count">Loading...</span>
+        </div>
+        <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <h2 id="servicesTitle2">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🏿</div>
+                <h3 id="service1Title2">Circuit</h3>
+                <p id="service1Desc2">Custom circuit diagrams for your projects.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤖 ⚙️ 🦾</div>
+                <h3 id="service2Title2">Robots & Machines</h3>
+                <p id="service2Desc2">Assistance with PFE projects, small robots, and simple machines.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔎</div>
+                <h3 id="service3Title2">Research</h3>
+                <p id="service3Desc2">Detailed research on components or machines you need.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚨</div>
+                <h3 id="service4Title2">Confidentiality</h3>
+                <p id="service4Desc2">Your information stays private at all times.</p>
+            </div>
+        </div>
+
+        <h2 id="servicesTitle">Our Components Service</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3 id="service1Title">Quality Components</h3>
+                <p id="service1Desc">Verified and tested components</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚡</div>
+                <h3 id="service2Title">Fast Delivery</h3>
+                <p id="service2Desc">1 day max to deliver to Saad Dahleb University Pv1</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💬</div>
+                <h3 id="service3Title">Return</h3>
+                <p id="service3Desc">1 day guarantee to return B or less items</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔒</div>
+                <h3 id="service4Title">Payment</h3>
+                <p id="service4Desc">Hand-to-hand transactions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="About">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 id="footerAboutTitle">About IK Electro</h4>
+                <p id="footerAboutText">Your trusted source for quality electronics components</p>
+            </div>
+            <div class="footer-section">
+                <h4 id="footerContactTitle"></h4>
+                <p id="footerPhone"></p>
+            </div>
+            <div class="footer-section">
+                <h4 id="footerFollowTitle"></h4>
+                <a href="https://t.me/Ik_electro" target="_blank" class="social-link"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p id="footerCopyright">&copy; 2025 IK Electro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="/placeholder.svg" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-details">
+                        <div class="detail-row">
+                            <span id="priceLabel">Price:</span>
+                            <span id="modalPrice"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span id="stockLabel">Stock:</span>
+                            <span id="modalStock"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span id="conditionLabel2">Condition:</span>
+                            <span id="modalCondition"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span id="categoryLabel2">Category:</span>
+                            <span id="modalCategory"></span>
+                        </div>
+                    </div>
+                    <div class="modal-datasheets" id="datasheetsContainer"></div>
+                    <button id="contactBtn" class="contact-btn">Contact via Telegram</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
