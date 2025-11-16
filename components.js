@@ -20,7 +20,7 @@ const components = [
   { id: "comp-019", name: "ESP32-CAM", short: "ESP32 Camera Module", price: 3000, currency: "DZD", condition: "B", stock: 1, category: "microcontrollers", tags:["ESP32","camera"], image:"esp32 cam.jpg", datasheets:["link"] },
   { id: "comp-020", name: "ESP32-WROOM", short: "ESP32 Module", price: 2000, currency: "DZD", condition: "B", stock: 1, category: "microcontrollers", tags:["ESP32"], image:"esp32 s2.jpg", datasheets:["link"] },
   { id: "comp-021", name: "Green LED", short: "Green LED", price: 30, currency: "DZD", condition: "B", stock: 13, category: "LEDs", tags:["LED","green"], image:"green led.jpg", datasheets:["link"] },
-  { id: "comp-022", name: "HC-05", short: "Bluetooth Module", price: 1100, currency: "DZD", condition: "A", stock: 1, category: "modules", tags:["bluetooth"], image:"HC-05.jpg", datasheets:["link"] },
+  { id: "comp-022", name: "HC-05", short: "Bluetooth Module", price: 1100, currency: "DZD", condition: "A", stock: 1, category: "modules", tags:["bluetooth"], image:"Hc-05.jpg", datasheets:["link"] },
   { id: "comp-023", name: "HC-RS04", short: "Ultrasonic Sensor", price: 450, currency: "DZD", condition: "A", stock: 1, category: "sensors", tags:["ultrasonic","sensor"], image:"HC-SR04.jpg", datasheets:["link"] },
   { id: "comp-024", name: "LCD1602A Screen", short: "LCD Display", price: 700, currency: "DZD", condition: "B", stock: 1, category: "displays", tags:["LCD","I2C"], image:"i2c-16x2.jpg", datasheets:["link"] },
   { id: "comp-025", name: "Joystick", short: "Analog Joystick Module", price: 400, currency: "DZD", condition: "A", stock: 1, category: "modules", tags:["joystick","analog"], image:"joystick.jpg", datasheets:["link"] },
