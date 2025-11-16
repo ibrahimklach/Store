@@ -45,7 +45,7 @@ const translations = {
         service4Title2: 'Confidentiality',
         service4Desc2: 'Your information stays private at all times.',
 
-        footerCopyright: '© 2025 EK Electro. All rights reserved.',
+        footerCopyright: '© 2025 IK Electro. All rights reserved.',
         stockLabel: 'Stock:',
         priceLabel: 'Price:',
         categoryLabel2: 'Category:',
@@ -88,7 +88,7 @@ const translations = {
 
 
 
-        footerCopyright: '© 2025 EK Electro. Tous droits réservés.',
+        footerCopyright: '© 2025 IK Electro. Tous droits réservés.',
         stockLabel: 'Stock :',
         priceLabel: 'Prix :',
         categoryLabel2: 'Catégorie :',
@@ -130,7 +130,7 @@ const translations = {
         service4Desc2: 'معلوماتك تبقى خاصة في جميع الأوقات.',
 
 
-        footerCopyright: '© 2025 EK Electro. جميع الحقوق محفوظة.',
+        footerCopyright: '© 2025 IK Electro. جميع الحقوق محفوظة.',
         stockLabel: 'المخزون:',
         priceLabel: 'السعر:',
         categoryLabel2: 'الفئة:',
