@@ -88,10 +88,6 @@ const translations = {
 
 
 
-        footerAboutTitle: 'À Propos d\'EK Electro',
-        footerAboutText: 'Votre source de confiance pour les composants électroniques de qualité',
-        footerContactTitle: 'Contact',
-        footerFollowTitle: 'Nous Suivre',
         footerCopyright: '© 2025 EK Electro. Tous droits réservés.',
         stockLabel: 'Stock :',
         priceLabel: 'Prix :',
@@ -134,10 +130,6 @@ const translations = {
         service4Desc2: 'معلوماتك تبقى خاصة في جميع الأوقات.',
 
 
-        footerAboutTitle: 'حول EK Electro',
-        footerAboutText: 'مصدرك الموثوق لمكونات إلكترونية عالية الجودة',
-        footerContactTitle: 'اتصل',
-        footerFollowTitle: 'تابعنا',
         footerCopyright: '© 2025 EK Electro. جميع الحقوق محفوظة.',
         stockLabel: 'المخزون:',
         priceLabel: 'السعر:',
