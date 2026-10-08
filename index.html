@@ -3,128 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IK Electro - Premium Electronics Components Catalog">
-    <title>IK Electro - Electronics Components</title>
+    <meta name="description" content="IK Electro — Premium robotics & electronics components. Quality parts for Arduino, ESP32, motors, sensors and more.">
+    <meta name="theme-color" content="#0a0a1f">
+    <meta name="keywords" content="electronics, robotics, components, Arduino, ESP32, Algeria, DZD">
+
+    <meta property="og:title" content="IK Electro — Robotics Components">
+    <meta property="og:description" content="Premium components for your robotics and electronics projects.">
+    <meta property="og:type" content="website">
+
+    <title>IK Electro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
-<body>
-    <!-- Navigation Header -->
+<body id="top">
+
+    <!-- ===== SVG ICON SPRITE (hidden, referenced via <use>) ===== -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-planet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8"/>
+                <ellipse cx="12" cy="12" rx="11" ry="3.5" transform="rotate(-20 12 12)"/>
+            </symbol>
+            <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </symbol>
+            <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+            </symbol>
+            <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </symbol>
+            <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </symbol>
+            <symbol id="i-telegram" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </symbol>
+            <symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </symbol>
+            <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/>
+            </symbol>
+            <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </symbol>
+            <symbol id="i-search-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </symbol>
+            <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </symbol>
+            <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </symbol>
+            <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </symbol>
+            <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+            </symbol>
+            <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+            </symbol>
+            <symbol id="i-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <circle cx="12" cy="12" r="2.5"/>
+                <path d="M6 12h.01M18 12h.01"/>
+            </symbol>
+            <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </symbol>
+            <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"/>
+                <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+                <path d="M10 11v6M14 11v6"/>
+                <path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+            </symbol>
+            <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </symbol>
+            <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+            </symbol>
+            <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </symbol>
+            <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </symbol>
+            <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="header-container">
-            <div class="logo">
-                <span class="logo-icon">⚡</span>
+            <a href="#top" class="logo">
+                <span class="logo-icon" aria-hidden="true">
+                    <svg><use href="#i-planet"/></svg>
+                </span>
                 <span class="logo-text">IK Electro</span>
-            </div>
-            
+            </a>
+
             <nav class="nav-menu">
-                <a href="#catalog" class="nav-link active">Catalog</a>
-                <a href="#services" class="nav-link">Services</a>
+                <a href="#catalog" class="nav-link" data-nav="catalog" id="navCatalog">Catalog</a>
+                <a href="#services" class="nav-link" data-nav="services" id="navServices">Services</a>
+                <a href="#about" class="nav-link" data-nav="about" id="navAbout">About</a>
             </nav>
 
             <div class="header-controls">
-                <button class="lang-btn" id="langBtn" title="Change Language">
-                    <span id="langIcon">🌐</span> EN
+                <button class="lang-btn" id="langBtn" title="Change Language" aria-label="Change language">
+                    <span id="langLabel">EN</span>
                 </button>
-                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
-                    <span id="themeIcon">🌙</span>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle theme">
+                    <svg id="themeIconLight"><use href="#i-moon"/></svg>
+                    <svg id="themeIconDark" style="display:none;"><use href="#i-sun"/></svg>
                 </button>
-                <a href="https://t.me/Ik_electro" target="_blank" class="telegram-btn" title="Contact on Telegram">
-                    <span>📱 Telegram</span>
+                <button class="cart-btn" id="cartToggle" title="Open Cart" aria-label="Open cart">
+                    <svg><use href="#i-cart"/></svg>
+                    <span class="cart-badge" id="cartBadge" style="display:none;">0</span>
+                </button>
+                <a href="https://t.me/Ik_electro" target="_blank" rel="noopener" class="telegram-btn" aria-label="Telegram">
+                    <svg><use href="#i-telegram"/></svg>
+                    <span class="label" id="headerTelegramLabel">Telegram</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="hero-content">
             <h1 id="heroTitle">Premium Electronics Components</h1>
             <p id="heroSubtitle">Discover quality components for your projects</p>
             <div class="hero-search">
                 <input type="text" id="searchInput" class="search-input" placeholder="Search components...">
-                <button class="search-btn">🔍</button>
+                <button class="search-btn" id="searchBtn" type="button">
+                    <svg><use href="#i-search"/></svg>
+                    <span id="searchBtnLabel">Search</span>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Filters Section -->
+    <!-- ===== FILTERS ===== -->
     <section class="filters-section">
         <div class="filters-container">
             <div class="filter-group">
-                <label id="categoryLabel">Category:</label>
+                <label id="categoryLabel" for="categoryFilter">Category:</label>
                 <select id="categoryFilter" class="filter-select">
-                    <option value="">All Categories</option>
+                    <option value="" id="categoryAllOption">All Categories</option>
                 </select>
             </div>
-            
+
             <div class="filter-group">
-                <label id="conditionLabel">Condition:</label>
+                <label id="conditionLabel" for="conditionFilter">Condition:</label>
                 <select id="conditionFilter" class="filter-select">
-                    <option value="">All Conditions</option>
-                    <option value="A">A - New</option>
-                    <option value="B">B - Used But 100% working</option>
-                    <option value="C">C - Have problem</option>
-                    <option value="D">D - Mixed components</option>
+                    <option value="" id="conditionAllOption">All Conditions</option>
+                    <option value="A" id="conditionA">A - New</option>
+                    <option value="B" id="conditionB">B - Used (100% working)</option>
+                    <option value="C" id="conditionC">C - Has Problem</option>
+                    <option value="D" id="conditionD">D - Mixed Components</option>
                 </select>
             </div>
 
             <div class="filter-group">
-                <label id="sortLabel">Sort by:</label>
+                <label id="sortLabel" for="sortFilter">Sort by:</label>
                 <select id="sortFilter" class="filter-select">
-                    <option value="name">Name</option>
-                    <option value="price-low">Price: Low to High</option>
-                    <option value="price-high">Price: High to Low</option>
-                    <option value="stock">Stock Available</option>
+                    <option value="name" id="sortName">Name</option>
+                    <option value="price-low" id="sortPriceLow">Price: Low to High</option>
+                    <option value="price-high" id="sortPriceHigh">Price: High to Low</option>
+                    <option value="stock" id="sortStock">Stock Available</option>
                 </select>
             </div>
 
             <div class="filter-group">
-                <label id="priceRangeLabel">Max Price:</label>
+                <label id="priceRangeLabel" for="priceRange">Max Price:</label>
                 <div class="price-input">
                     <input type="number" id="priceRange" class="price-input-field" min="0" max="5000" value="5000">
                     <span class="price-currency">DZD</span>
                 </div>
             </div>
 
-            <button id="resetBtn" class="reset-btn">Reset Filters</button>
+            <button id="resetBtn" class="reset-btn" type="button">Reset Filters</button>
         </div>
     </section>
 
-    <!-- Products Grid -->
+    <!-- ===== PRODUCTS ===== -->
     <section class="products-section" id="catalog">
         <div class="products-header">
             <h2 id="productsTitle">Components Catalog</h2>
-            <span id="productCount" class="product-count">Loading...</span>
+            <span id="productCount" class="product-count">0</span>
         </div>
         <div id="productsGrid" class="products-grid"></div>
+        <nav id="pagination" class="pagination" aria-label="Catalog pagination"></nav>
     </section>
 
-    <!-- Services Section -->
+    <!-- ===== SERVICES ===== -->
     <section class="services-section" id="services">
         <h2 id="servicesTitle2">Our Services</h2>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">🏿</div>
-                <h3 id="service1Title2">Circuit</h3>
+                <div class="service-icon"><svg><use href="#i-cpu"/></svg></div>
+                <h3 id="service1Title2">Circuit Design</h3>
                 <p id="service1Desc2">Custom circuit diagrams for your projects.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🤖 ⚙️ 🦾</div>
-                <h3 id="service2Title2">Robots & Machines</h3>
+                <div class="service-icon"><svg><use href="#i-settings"/></svg></div>
+                <h3 id="service2Title2">Robots &amp; Machines</h3>
                 <p id="service2Desc2">Assistance with PFE projects, small robots, and simple machines.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🔎</div>
+                <div class="service-icon"><svg><use href="#i-search-lg"/></svg></div>
                 <h3 id="service3Title2">Research</h3>
                 <p id="service3Desc2">Detailed research on components or machines you need.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🚨</div>
+                <div class="service-icon"><svg><use href="#i-shield"/></svg></div>
                 <h3 id="service4Title2">Confidentiality</h3>
                 <p id="service4Desc2">Your information stays private at all times.</p>
             </div>
@@ -133,60 +257,105 @@
         <h2 id="servicesTitle">Our Components Service</h2>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">📦</div>
+                <div class="service-icon"><svg><use href="#i-package"/></svg></div>
                 <h3 id="service1Title">Quality Components</h3>
                 <p id="service1Desc">Verified and tested components</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">⚡</div>
+                <div class="service-icon"><svg><use href="#i-zap"/></svg></div>
                 <h3 id="service2Title">Fast Delivery</h3>
-                <p id="service2Desc">1 day max to deliver to Saad Dahleb University Pv1</p>
+                <p id="service2Desc">Only delivered to PV1 club members</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">💬</div>
-                <h3 id="service3Title">Return</h3>
-                <p id="service3Desc">1 day guarantee to return B or less items</p>
+                <div class="service-icon"><svg><use href="#i-tool"/></svg></div>
+                <h3 id="service3Title">Component Revival</h3>
+                <p id="service3Desc">I try to bring dead components back to life</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🔒</div>
+                <div class="service-icon"><svg><use href="#i-cash"/></svg></div>
                 <h3 id="service4Title">Payment</h3>
-                <p id="service4Desc">Hand-to-hand transactions</p>
+                <p id="service4Desc">Hand to hand only</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="About">
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="about">
         <div class="footer-content">
             <div class="footer-section">
-                <h4 id="footerAboutTitle">About IK Electro</h4>
-                <p id="footerAboutText">Your trusted source for quality electronics components</p>
+                <div class="footer-brand">
+                    <span class="footer-brand-icon"><svg><use href="#i-planet"/></svg></span>
+                    <span>IK Electro</span>
+                </div>
+                <p class="footer-tagline" id="footerTagline">
+                    Electronics &amp; Robotics components for makers, students, and engineers in Algeria.
+                </p>
+                <p>
+                    <svg><use href="#i-map"/></svg>
+                    <span id="footerLocation">Saad Dahleb University — Blida, Algeria</span>
+                </p>
             </div>
+
             <div class="footer-section">
-                <h4 id="footerContactTitle"></h4>
-                <p id="footerPhone"></p>
+                <h4 id="footerContactTitle">Contact</h4>
+                <a href="https://t.me/Ik_electro" target="_blank" rel="noopener">
+                    <svg><use href="#i-telegram"/></svg>
+                    <span>Telegram: @Ik_electro</span>
+                </a>
+                <p>
+                    <svg><use href="#i-truck"/></svg>
+                    <span id="footerDelivery">Delivery to PV1 club members only</span>
+                </p>
+                <p>
+                    <svg><use href="#i-cash"/></svg>
+                    <span id="footerPayment">Cash — Hand to hand</span>
+                </p>
             </div>
+
             <div class="footer-section">
-                <h4 id="footerFollowTitle"></h4>
-                <a href="https://t.me/Ik_electro" target="_blank" class="social-link"></a>
+                <h4 id="footerServicesTitle">Services</h4>
+                <p><svg><use href="#i-tool"/></svg> <span id="footerService1">Component Revival</span></p>
+                <p><svg><use href="#i-settings"/></svg> <span id="footerService2">Robots &amp; Machines</span></p>
+                <p><svg><use href="#i-search-lg"/></svg> <span id="footerService3">Research &amp; Consulting</span></p>
+            </div>
+
+            <div class="footer-section">
+                <h4 id="footerFollowTitle">Follow</h4>
+                <a href="https://t.me/Ik_electro" target="_blank" rel="noopener">
+                    <svg><use href="#i-telegram"/></svg>
+                    <span>Telegram Channel</span>
+                </a>
+                <p>
+                    <svg><use href="#i-globe"/></svg>
+                    <span id="footerLangs">Available in: EN / FR / AR</span>
+                </p>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p id="footerCopyright">&copy; 2025 IK Electro. All rights reserved.</p>
+            <p id="footerCopyright">&copy; <span id="footerYear">2025</span> IK Electro. All rights reserved.</p>
+            <div class="footer-bottom-langs">
+                <button data-setlang="en" type="button">EN</button>
+                <button data-setlang="fr" type="button">FR</button>
+                <button data-setlang="ar" type="button">AR</button>
+            </div>
         </div>
     </footer>
 
-    <!-- Product Detail Modal -->
+    <!-- ===== PRODUCT MODAL ===== -->
     <div id="productModal" class="modal">
         <div class="modal-content">
-            <button class="modal-close">&times;</button>
+            <button class="modal-close" aria-label="Close" type="button">
+                <svg><use href="#i-close"/></svg>
+            </button>
             <div class="modal-body">
                 <div class="modal-image">
-                    <img id="modalImage" src="/placeholder.svg" alt="Product">
+                    <img id="modalImage" src="" alt="">
                 </div>
                 <div class="modal-info">
                     <h2 id="modalTitle"></h2>
                     <p id="modalDescription"></p>
+
                     <div class="modal-details">
                         <div class="detail-row">
                             <span id="priceLabel">Price:</span>
@@ -205,12 +374,62 @@
                             <span id="modalCategory"></span>
                         </div>
                     </div>
+
+                    <div class="modal-section" id="specsSection" style="display:none;">
+                        <div class="modal-section-title" id="specsTitle">Specifications</div>
+                        <div class="specs-grid" id="specsGrid"></div>
+                    </div>
+
+                    <div class="modal-section" id="compatSection" style="display:none;">
+                        <div class="modal-section-title" id="compatTitle">Compatibility</div>
+                        <div class="compat-tags" id="compatTags"></div>
+                    </div>
+
                     <div class="modal-datasheets" id="datasheetsContainer"></div>
-                    <button id="contactBtn" class="contact-btn">Contact via Telegram</button>
+
+                    <div class="modal-actions">
+                        <a id="contactBtn" class="contact-btn" href="https://t.me/Ik_electro" target="_blank" rel="noopener">
+                            <svg><use href="#i-telegram"/></svg>
+                            <span id="contactBtnLabel">Contact</span>
+                        </a>
+                        <button id="modalAddCartBtn" class="add-cart-btn" type="button">
+                            <svg><use href="#i-cart"/></svg>
+                            <span id="modalAddCartLabel">Add to Cart</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- ===== CART DRAWER ===== -->
+    <div id="cartOverlay" class="cart-overlay"></div>
+    <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-header">
+            <h3>
+                <svg><use href="#i-cart"/></svg>
+                <span id="cartTitle">Your Cart</span>
+            </h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart" type="button">
+                <svg><use href="#i-close"/></svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span id="cartTotalLabel">Total:</span>
+                <span class="cart-total-value" id="cartTotal">0 DZD</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" type="button">
+                <svg><use href="#i-telegram"/></svg>
+                <span id="checkoutLabel">Order via Telegram</span>
+            </button>
+            <p class="cart-note" id="cartNote">Hand to hand payment only</p>
+        </div>
+    </aside>
+
+    <!-- ===== TOAST CONTAINER ===== -->
+    <div class="toast-container" id="toastContainer"></div>
 
     <script src="components.js"></script>
     <script src="app.js"></script>
