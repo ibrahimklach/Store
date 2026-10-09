@@ -294,20 +294,6 @@ const components = [
     compatibility: ["Arduino", "ESP32", "Any 3.3V/5V circuit"]
   },
   {
-    id: "comp-015",
-    name: "SD Card Module",
-    short: "Micro SD Card Reader Module",
-    price: 900,
-    currency: "DZD",
-    condition: "B",
-    stock: 1,
-    category: "modules",
-    tags: ["SD", "storage"],
-    image: "sd card modual.jpg",
-    datasheets: ["link"],
-    compatibility: ["Arduino", "ESP32", "AVR", "ARM"]
-  },
-  {
     id: "comp-017",
     name: "Buzzer",
     short: "Active Buzzer",
