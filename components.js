@@ -581,7 +581,7 @@ const components = [
     short: "these have much little light then normal",
     price: 5,
     currency: "DZD",
-    condition: "A",
+    condition: "B",
     stock: 7,
     category: "LEDs",
     tags: ["LED", "green"],
