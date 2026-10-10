@@ -198,7 +198,7 @@ const components = [
   {
     id: "comp-008",
     name: "9V Battery Plug",
-    short: "Battery Connector",
+    short: "Battery Connector, there is one with it port from image and other with just wires",
     price: 70,
     currency: "DZD",
     condition: "A",
@@ -578,7 +578,7 @@ const components = [
   {
     id: "comp-045",
     name: "Small Green LEDs",
-    short: "Small green LEDs",
+    short: "these have much little light then normal",
     price: 5,
     currency: "DZD",
     condition: "A",
@@ -606,8 +606,8 @@ const components = [
   },
   {
     id: "comp-047",
-    name: "Arduino",
-    short: "Arduino board",
+    name: "Arduino uno",
+    short: "pin 8 don't work",
     price: 1000,
     currency: "DZD",
     condition: "B",
